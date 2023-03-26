@@ -18,7 +18,7 @@ $(document).ready(function () {
 		event.preventDefault();
 		form.find('button').addClass('sending');
 		$.ajax({
-			url: "/mail.php",
+			url: "/test/mail.php",
 			data: form.serialize(),
 			type: "POST",
 			//dataType: "json"
