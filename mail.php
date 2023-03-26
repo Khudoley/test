@@ -20,8 +20,8 @@ if(isset($_POST["send"])) {
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 	$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 	
-	$mail->setFrom('clutkabolwm@gmail.com', 'Александр');
-   $mail->addAddress($_POST["email"]); 
+	$mail->setFrom('from@example.com', 'Mailer');
+   $mail->addAddress('clutkabolwm@gmail.com'); 
 
 	$mail->isHTML(true);     
 	
