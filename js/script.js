@@ -21,7 +21,7 @@ $(document).ready(function () {
 			url: "/test/mail.php",
 			data: form.serialize(),
 			type: "POST",
-			//dataType: "json"
+			dataType: "json"
 		}).done(function (data) {
 			console.log('отправлено');
 			form.find('button').removeClass('sending');
@@ -30,7 +30,7 @@ $(document).ready(function () {
 			// $.fancybox.open('<div class="form-success">Сообщение отправлено!</div>');
 		});
 	});
-	console.log('1');
+	console.log('2');
 
 })
 
