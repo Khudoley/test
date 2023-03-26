@@ -23,6 +23,7 @@ $(document).ready(function () {
 			type: "POST",
 			//dataType: "json"
 		}).done(function (data) {
+			console.log('отправлено');
 			form.find('button').removeClass('sending');
 			// $.fancybox.close();
 			form[0].reset();
