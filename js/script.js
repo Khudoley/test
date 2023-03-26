@@ -30,6 +30,8 @@ $(document).ready(function () {
 			// $.fancybox.open('<div class="form-success">Сообщение отправлено!</div>');
 		});
 	});
+	console.log('1');
+
 })
 
 
