@@ -13,24 +13,24 @@ $(document).ready(function () {
 			$(value).attr('data-count', index + 1)
 		});
 	});
-	$("form").submit(function (event) {
-		let form = $(this);
-		event.preventDefault();
-		form.find('button').addClass('sending');
-		$.ajax({
-			url: "/test/mail.php",
-			data: form.serialize(),
-			type: "POST",
-			dataType: "json"
-		}).done(function (data) {
-			console.log('отправлено');
-			form.find('button').removeClass('sending');
-			// $.fancybox.close();
-			form[0].reset();
-			// $.fancybox.open('<div class="form-success">Сообщение отправлено!</div>');
-		});
-	});
-	console.log('2');
+	// $("form").submit(function (event) {
+	// 	let form = $(this);
+	// 	event.preventDefault();
+	// 	form.find('button').addClass('sending');
+	// 	$.ajax({
+	// 		url: "/test/mail.php",
+	// 		data: form.serialize(),
+	// 		type: "POST",
+	// 		dataType: "json"
+	// 	}).done(function (data) {
+	// 		console.log('отправлено');
+	// 		form.find('button').removeClass('sending');
+	// 		// $.fancybox.close();
+	// 		form[0].reset();
+	// 		// $.fancybox.open('<div class="form-success">Сообщение отправлено!</div>');
+	// 	});
+	// });
+	console.log('1');
 
 })
 
